@@ -1,0 +1,26 @@
+
+C:\Users\mites>mkdir diabetesproject
+
+C:\Users\mites>cd diabetesproject
+
+C:\Users\mites\diabetesproject>python -m venv venv
+
+C:\Users\mites\diabetesproject>venv\Scripts\activate
+
+(venv) C:\Users\mites\diabetesproject>app.py
+
+(venv) C:\Users\mites\diabetesproject>flask run
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [08/Mar/2019 14:21:03] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [08/Mar/2019 14:21:04] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [08/Mar/2019 14:21:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+C:\Users\mites\Anaconda3\lib\site-packages\sklearn\base.py:251: UserWarning: Trying to unpickle estimator GaussianNB from version 0.19.1 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+127.0.0.1 - - [08/Mar/2019 14:22:15] "[37mPOST /predict HTTP/1.1[0m" 200 -
+C:\Users\mites\Anaconda3\lib\site-packages\sklearn\base.py:251: UserWarning: Trying to unpickle estimator GaussianNB from version 0.19.1 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+127.0.0.1 - - [08/Mar/2019 14:23:45] "[37mPOST /predict HTTP/1.1[0m" 200 -
