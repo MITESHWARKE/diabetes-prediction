@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>Diabetes Prediction Using ML</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{url_for('predict')}}" method="POST">
+		<p>put values here</p> 
+
+
+
+		<br>
+	    <label for="Pregnancies">No of Pregnancies:</label>
+        <input type="number" name="Pregnancies" id="Pregnancies"><br>
+    
+
+         <br>
+        <label for="PlasmaGlucose">Plasma Glucose Concentration(in mg/dl):</label><br>
+        <input type="number" name="PlasmaGlucose" id="PlasmaGlucose"><br>
+     
+
+        <br>
+        <label for="DiastolicBloodPressure">Diastolic Blood Pressure(in mmHg):</label>
+        <input type="number" name="DiastolicBloodPressure" id="DiastolicBloodPressure">
+         <br>
+
+
+         <br>
+        <label for="TricepsThickness">Triceps Skin fold Thickness:</label>
+        <input type="number" name="TricepsThickness" id="TricepsThickness"><br>
+
+     <br>
+    <label for="SerumInsulin">Serum Insulin:</label>
+    <input type="number" name="SerumInsulin" id="SerumInsulin">
+    <br>
+
+    <br>
+    <label for="BMI">Body Mass Index:</label>
+    <input type="opacity" type=range  max=2 step=22.00392156863 name="BMI" id="BMI"><br>
+
+    <br>
+    <label for="DiabetesPedigree">Diabetes Pedigree Function:</label>
+    
+    <input type="opacity" type=range min=0 max=1 step=0.00392156863 name="DiabetesPedigree" id="DiabetesPedigree"><br>
+
+    <br>
+    <label for="Age">Age:</label>
+    <input type="number" name="Age" id="Age"><br>
+
+
+
+  
+
+<br>
+<input type="submit" class="btn-info" value="predict">
+<input type="reset" class="btn-info" value="Reset">
+<br>
+
+</form>
+
+
+
+</div>
+</body>
+</html>
+
